@@ -6,7 +6,7 @@ app.use(express.json());
 app.set('view engine', 'ejs')
 const requireDir = require('require-dir');
 // requireDir('./src/models')
-app.use('/',require("./src/routes"))
+app.use('/auth',require("./src/routes"))
 
 app.get('/', (req,res) =>{
     res.render('index')
