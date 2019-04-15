@@ -10,9 +10,14 @@ const app = express();
 // set view engine
 app.set('view engine', 'ejs');
 //connect to mongp
-console.log(keys.mongodb.dbURI)
+
+
+
+
+
+console.log('b: '+keys.mongodb.dbURI)
 mongoose.connect(keys.mongodb.dbURI, ()=>{
-    console.log("connect")
+    console.log("connected to mongo")
 }
 )
 
