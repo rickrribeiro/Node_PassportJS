@@ -9,5 +9,8 @@ module.exports = {
     },
     mongodb:{
         dbURI: `mongodb+srv://rickrribeiro:ricardo123@cluster0-dvf6w.mongodb.net/users`
+    },
+    session: {
+        cookieKey: 'hello'
     }
 }
